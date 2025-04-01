@@ -3,7 +3,7 @@ body {
   font-family: 'Arial', sans-serif;
 }
 .jumbotron {
-  background: url('9.jpg') no-repeat center center;
+  background: url('images/9') no-repeat center center;
   background-size: cover;
   color: white;
   padding: 150px 0;
@@ -175,7 +175,7 @@ body {
 
 /* Style pour la section parallax */
 .parallax-section {
-    background: url('2.jpg') no-repeat center center fixed;
+    background: url('images/2.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 500px; /* Ajustez la hauteur selon vos besoins */
     position: relative;
@@ -216,7 +216,7 @@ body {
 
 /* Style pour la section Témoignages */
 .testimonial-carousel {
-    background: url('6.jpg') no-repeat center center;
+    background: url('images/6.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     padding: 60px 0;
@@ -275,7 +275,7 @@ body {
   
 /* Style pour le footer */
 .footer {
-    background: url('4.jpg') no-repeat center center;
+    background: url('images/4.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     padding: 50px 0;
