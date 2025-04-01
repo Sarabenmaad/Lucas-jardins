@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Lucas Jardins</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="faq-icon.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .faq-header {
+            background: url('Ban.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .faq-header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .faq-container {
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header class="faq-header">
+        <div class="container">
+            <h1>Foire aux Questions (FAQ)</h1>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">lucasjardins</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acceuil</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Nos Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="creation-entretien.html">Création et entretien</a></li>
+                            <li><a class="dropdown-item" href="systemes-arrosage.html">Systèmes d'arrosage</a></li>
+                            <li><a class="dropdown-item" href="plantations.html">Plantations</a></li>
+                            <li><a class="dropdown-item" href="Elegage.html">Élagage</a></li>
+                            <li><a class="dropdown-item" href="Tailledevegetaux.html">Taille de végétaux</a></li>
+                            <li><a class="dropdown-item" href="debrousaillage.html">Débroussaillage</a></li>
+                            <li><a class="dropdown-item" href="Amenagement.html">Aménagement de terrase</a></li>
+                            <li><a class="dropdown-item" href="pelouse.html">Tonte de pelouse</a></li>
+                            <li><a class="dropdown-item" href="Desherbage.html">Désherbage</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="realisation.html">Réalisation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---end navbar-->
+
+
+
+    <!-- Contenu -->
+    <section class="faq-container container">
+        <h2 class="text-center mb-4">Questions Fréquemment Posées</h2>
+        <div class="accordion" id="faqAccordion">
+
+            <!-- Question 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="question1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer1">
+                        🌿 Quels services propose Lucas Jardins ?
+                    </button>
+                </h2>
+                <div id="answer1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Lucas Jardins propose des services de création et d’entretien de jardins, l’installation de systèmes d’arrosage, la plantation, l’élagage, la taille de végétaux, le débroussaillage et plus encore.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="question2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer2">
+                        💧 Proposez-vous l’installation de systèmes d’arrosage automatique ?
+                    </button>
+                </h2>
+                <div id="answer2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Oui, nous installons des systèmes d’arrosage automatique adaptés à la taille et aux besoins de votre jardin, pour un entretien efficace et économique en eau.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="question3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer3">
+                        🌱 Puis-je demander un devis gratuit ?
+                    </button>
+                </h2>
+                <div id="answer3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Bien sûr ! Vous pouvez nous contacter via notre formulaire en ligne ou par téléphone pour obtenir un devis personnalisé et gratuit.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="question4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer4">
+                        🏡 Travaillez-vous avec des professionnels et des entreprises ?
+                    </button>
+                </h2>
+                <div id="answer4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Oui, nous travaillons aussi bien avec des particuliers qu’avec des professionnels (hôtels, entreprises, collectivités) pour l’aménagement et l’entretien des espaces verts.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="question5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer5">
+                        ⏳ Quel est le délai d’intervention après une demande ?
+                    </button>
+                </h2>
+                <div id="answer5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Nous répondons généralement sous 24 à 48 heures. Le délai d’intervention dépend ensuite de la nature du projet et de notre planning.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2025 Lucas Jardins. Tous droits réservés.</p>
+        <p>
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Lucas Jardins</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- AOS (Animation On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* En-tête */
+        .contact-header {
+            background: url('contact.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .contact-header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Formulaire */
+        .contact-form {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #218838;
+        }
+
+        /* Carte Google Maps */
+        .map-container {
+            height: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .footer a:hover {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header class="contact-header">
+        <div class="container">
+            <h1 data-aos="fade-down">Contactez-nous</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">lucasjardins</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acceuil</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Nos Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="creation-entretien.html">Création et entretien</a></li>
+                            <li><a class="dropdown-item" href="systemes-arrosage.html">Systèmes d'arrosage</a></li>
+                            <li><a class="dropdown-item" href="plantations.html">Plantations</a></li>
+                            <li><a class="dropdown-item" href="Elegage.html">Élagage</a></li>
+                            <li><a class="dropdown-item" href="Tailledevegetaux.html">Taille de végétaux</a></li>
+                            <li><a class="dropdown-item" href="debrousaillage.html">Débroussaillage</a></li>
+                            <li><a class="dropdown-item" href="Amenagement.html">Aménagement de terrase</a></li>
+                            <li><a class="dropdown-item" href="pelouse.html">Tonte de pelouse</a></li>
+                            <li><a class="dropdown-item" href="Desherbage.html">Désherbage</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="realisation.html">Réalisation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---end navbar-->
+
+
+    <!-- Contenu principal -->
+    <section class="container py-5">
+        <div class="row">
+            <!-- Formulaire de contact -->
+            <div class="col-md-6" data-aos="fade-right">
+                <h3>Envoyez-nous un message</h3>
+                <p>Nous sommes à votre écoute pour toute question ou demande de devis.</p>
+                
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Votre email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Envoyer</button>
+                </form>
+            </div>
+
+            <!-- Informations et carte -->
+            <div class="col-md-6 mt-4 mt-md-0" data-aos="fade-left">
+                <h3>Informations</h3>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-map-marker-alt me-2"></i> 123 Rue des Jardins, Paris</li>
+                    <li><i class="fas fa-phone me-2"></i> +33 1 10 10 10</li>
+                    <li><i class="fas fa-envelope me-2"></i> contact@lucasjardins.com</li>
+                </ul>
+                
+                <!-- Carte Google Maps -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d54709.91579872954!2d7.220941000000001!3d43.739012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdce4b65e8d001%3A0x44d604e781a67824!2s102%20Chem.%20du%20G%C3%A9nie%2C%2006000%20Nice%2C%20France!5e1!3m2!1sfr!2sus!4v1742592820330!5m2!1sfr!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Réseaux sociaux -->
+                <div class="social-links mt-3">
+                    <a href="#" class="text-dark me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-dark"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Lucas Jardins. Tous droits réservés.</p>
+            <p>123 Rue des Jardins, Paris | +33 1 10 10 10</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS (Animation On Scroll) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

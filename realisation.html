@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Réalisations | Lucas Jardins</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- AOS (Animation On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS personnalisé -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Icône de page -->
+  <link rel="shortcut icon" href="Ré_1.jpeg" type="image/x-icon">
+  
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .service-header {
+      background: url('RER 2.jpeg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .service-header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .service-header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-content {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      background: #333;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    .footer a:hover {
+      color: #28a745;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- En-tête de la page -->
+  <header class="service-header">
+    <div class="container">
+      <h1 data-aos="fade-down">Nos Réalisations</h1>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">lucasjardins</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Acceuil</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown">
+                        Nos Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="creation-entretien.html">Création et entretien</a></li>
+                        <li><a class="dropdown-item" href="systemes-arrosage.html">Systèmes d'arrosage</a></li>
+                        <li><a class="dropdown-item" href="plantations.html">Plantations</a></li>
+                        <li><a class="dropdown-item" href="Elegage.html">Élagage</a></li>
+                        <li><a class="dropdown-item" href="Tailledevegetaux.html">Taille de végétaux</a></li>
+                        <li><a class="dropdown-item" href="debrousaillage.html">Débroussaillage</a></li>
+                        <li><a class="dropdown-item" href="Amenagement.html">Aménagement de terrase</a></li>
+                        <li><a class="dropdown-item" href="pelouse.html">Tonte de pelouse</a></li>
+                        <li><a class="dropdown-item" href="Desherbage.html">Désherbage</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="realisation.html">Réalisation</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!---end navbar-->
+
+
+
+  <!-- Contenu de la page -->
+  <section class="service-content container">
+    <h2 data-aos="fade-up">Découvrez nos projets</h2>
+    <p data-aos="fade-up" data-aos-delay="200">
+      Chez <strong>Lucas Jardins</strong>, nous mettons notre expertise à votre service pour créer des espaces verts uniques et harmonieux.
+      Découvrez nos plus belles réalisations, entre jardins paysagers, terrasses modernes et systèmes d’arrosage innovants.
+    </p>
+
+    <!-- Galerie d'images -->
+    <div class="gallery" data-aos="fade-up" data-aos-delay="300">
+      <img src="RE3.jpeg" alt="Jardin moderne">
+      <img src="RE5.jpeg" alt="Terrasses en bois">
+      <img src="RE4.jpeg" alt="Bassin naturel">
+      <img src="RE6.jpeg" alt="Parc paysager">
+      <img src="RE7.jpeg" alt="Espace vert urbain">
+      <img src="RE8.jpg" alt="Jardin méditerranéen">
+      <img src="R1.jpg" alt="Jardin méditerranéen1">
+      <img src="R2.jpg" alt="Jardin méditerranéen2">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2025 Lucas Jardins. Tous droits réservés.</p>
+      <p>123 Rue des Jardins, Paris | +33 1 10 10 10</p>
+      <p>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS (Animation On Scroll) JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Débroussaillage | Lucas Jardins</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS personnalisé -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden;
+    }
+    .service-header {
+      background: url('DEP.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+    }
+    .service-header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    .service-content {
+      padding: 50px 0;
+      text-align: center;
+    }
+    .service-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    .service-content p {
+      font-size: 1.2rem;
+      color: #555;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    .btn-contact {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .btn-contact:hover {
+      transform: scale(1.1);
+      background: #28a745;
+      color: white;
+    }
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .image-gallery img {
+      width: 30%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: scale(0.9);
+      transition: transform 0.5s ease;
+    }
+    .image-gallery img:hover {
+      transform: scale(1);
+    }
+    @media (max-width: 768px) {
+      .image-gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+      .image-gallery img {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- En-tête de la page -->
+  <header class="service-header">
+    <div class="container">
+      <h1 class="animate__animated animate__fadeInDown">Débroussaillage</h1>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Lucas Jardins</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Nos Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="creation-entretien.html">Création et entretien</a></li>
+              <li><a class="dropdown-item" href="systemes-arrosage.html">Systèmes d'arrosage</a></li>
+              <li><a class="dropdown-item" href="plantations.html">Plantations</a></li>
+              <li><a class="dropdown-item" href="elagage.html">Élagage</a></li>
+              <li><a class="dropdown-item" href="Tailledevegetaux.html">Taille de végétaux</a></li>
+              <li><a class="dropdown-item" href="debrousaillage.html">Débroussaillage</a></li>
+              <li><a class="dropdown-item" href="Amenagement.html">Aménagement de terrasse</a></li>
+              <li><a class="dropdown-item" href="pelouse.html">Tonte de pelouse</a></li>
+              <li><a class="dropdown-item" href="Desherbage.html">Désherbage</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="realisation.html">Réalisation</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenu de la page -->
+  <section class="service-content container">
+    <h2 class="animate__animated animate__fadeInUp">Un terrain propre et sécurisé</h2>
+    <p class="animate__animated animate__fadeInUp">Nos experts vous aident à éliminer les broussailles, herbes hautes et déchets verts pour prévenir les incendies et améliorer l’esthétique de votre espace.</p>
+    
+    <!-- Galerie d'images -->
+    <div class="image-gallery">
+      <img src="DE1.jpg" alt="Débroussaillage en cours" class="animate__animated animate__zoomIn">
+      <img src="DE2.jpg" alt="Terrain nettoyé" class="animate__animated animate__zoomIn">
+      <img src="DE3.jpg" alt="Avant / Après" class="animate__animated animate__zoomIn">
+    </div>
+
+    <a href="contact.html" class="btn btn-success btn-contact animate__animated animate__pulse">Contactez-nous</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center bg-dark text-white p-3">
+    <div class="container">
+      <p>&copy; 2025 Lucas Jardins. Tous droits réservés.</p>
+      <p>123 Rue des Jardins, Paris | +33 1 10 10 10</p>
+      <p>
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
