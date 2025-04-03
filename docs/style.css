@@ -177,7 +177,7 @@ body {
 .parallax-section {
     background: url('images/2.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 500px; /* Ajustez la hauteur selon vos besoins */
+    height: 500px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -195,7 +195,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Overlay sombre pour améliorer la lisibilité */
+    background: rgba(0, 0, 0, 0.5);
   }
   
   .parallax-content {
@@ -230,7 +230,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Overlay pour rendre le texte plus lisible */
+    background: rgba(0, 0, 0, 0.5);
   }
   
   .testimonial-carousel .container {
@@ -290,7 +290,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Overlay pour rendre le texte plus lisible */
+    background: rgba(0, 0, 0, 0.5);
   }
   
   .footer .container {
