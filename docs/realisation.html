@@ -3,20 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nos Réalisations | Lucas Jardins</title>
-  <meta name="description" content="Découvrez les réalisations paysagères de Lucas Jardins à Paris : jardins, terrasses et aménagements extérieurs inspirants.">
+  <title>Réalisations Paysagistes à Paris | Lucas Jardins - Nos Projets 🌿</title>
+  <meta name="description" content="Découvrez nos réalisations d'aménagement paysager à Paris : jardins, terrasses, bassins. 50+ projets livrés avec photos avant/après. Devis personnalisé.">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- AOS (Animation On Scroll) CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- CSS personnalisé -->
   <link rel="stylesheet" href="style.css">
-  
-  <!-- Icône de page -->
-  <link rel="shortcut icon" href="Ré_1.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/Ré 3.jpeg" type="image/x-icon">
   <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "Jardin contemporain Paris 16e",
+          "image": "https://www.votresite.com/images/jardin-contemporain-paris-16e.webp"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "Terrasse en bois Paris 7e",
+          "image": "https://www.votresite.com/images/terrasse-bois-paris-7e.webp"
+        }
+      }]
+    }
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -89,6 +105,56 @@
       transform: scale(1.05);
     }
 
+    .testimonial-snippet [itemprop="reviewBody"] {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+      font-style: italic;
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .testimonial-snippet-author {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #495057;
+}
+
+.testimonial-snippet [itemprop="author"] {
+  color: #28a745;
+  margin-right: 10px;
+}
+
+.testimonial-snippet [itemprop="datePublished"] {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.testimonial-rating {
+  color: #ffc107;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.testimonial-rating::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  .testimonial-snippet {
+    padding: 15px;
+    margin: 20px 0;
+  }
+  
+  .testimonial-snippet [itemprop="reviewBody"] {
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+}
+
     .footer {
       background: #333;
       color: white;
@@ -112,7 +178,7 @@
   <!-- En-tête de la page -->
   <header class="service-header">
     <div class="container">
-      <h1 data-aos="fade-down">Nos Réalisations</h1>
+      <h1 data-aos="fade-down">Nos Réalisations Paysagères à Paris <small>50+ projets livrés</small></h1>
     </div>
   </header>
 
@@ -171,13 +237,35 @@
       <img src="images/RE3.jpeg" alt="Aménagement de jardin paysager à Paris">
       <img src="images/RE5.jpeg" alt="Terrasses en bois">
       <img src="images/RE4.jpeg" alt="Bassin naturel">
-      <img src="images/RE6.jpeg" alt="Parc paysager">
-      <img src="images/RE7.jpeg" alt="Espace vert urbain">
-      <img src="images/RE8.jpg" alt="Jardin méditerranéen">
-      <img src="images/R1.jpg" alt="Jardin méditerranéen1">
-      <img src="images/R2.jpg" alt="Jardin méditerranéen2">
+      <img src="images/RE6.webp" alt="Parc paysager">
+      <img src="images/RE7.webp" alt="Espace vert urbain">
+      <img src="images/RE8.webp" alt="Jardin méditerranéen">
+      <img src="images/R1.webp" alt="Jardin méditerranéen1">
+      <img src="images/R2.webp" alt="Jardin méditerranéen2">
     </div>
   </section>
+  <div class="testimonial-snippet" itemscope itemtype="https://schema.org/Review">
+    <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
+      <span itemprop="name" hidden>Lucas Jardins</span>
+    </div>
+    
+    <p itemprop="reviewBody">"Notre jardin dans le Marais a été transformé en 2 semaines ! L'équipe a su respecter le caractère historique du lieu tout en apportant des solutions modernes."</p>
+    
+    <div class="testimonial-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+      <meta itemprop="ratingValue" content="5">
+      <meta itemprop="bestRating" content="5">
+    </div>
+    
+    <div class="testimonial-snippet-author">
+      <span itemprop="author">Marie D.</span>, 
+      <span itemprop="datePublished">15/03/2025</span>
+    </div>
+  </div>
+  <div class="text-center">
+  <a href="contact.html" class="btn btn-success">
+    🌟 Votre Projet Parisien Sur Mesure - Devis Gratuit
+  </a>
+  </div>
 
   <!-- Footer -->
   <footer class="footer text-center">
