@@ -5,91 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucas Jardins - Paysagiste Professionnel à Paris</title>
   <meta name="description" content="Création et entretien d'espaces verts à Paris. Paysagiste professionnel depuis 2010. Devis gratuit.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    .jumbotron, .navbar { display: block; }
+    .jumbotron {
+      padding: 4rem 2rem;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/9.webp') center/cover;
+      color: white;
+    }
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    header, nav { display: block; }
+    .navbar-brand { font-weight: bold; }
+    .btn { display: inline-block; padding: 0.5rem 1rem; }
+    .btn-success { background: #28a745; color: white; }
+    .img-fluid { max-width: 100%; height: auto; }
+    .rounded { border-radius: 0.25rem; }
+  </style>
+
   <link rel="preload" href="images/9.webp" as="image" fetchpriority="high">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <!-- Font Awesome pour les icônes -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="images/9.webp" type="image/x-icon">
-  <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Accueil",
-            "item": "https://sarabenmaad.github.io/Lucas-jardins/index.html"
-          }
-        ]
-      }
-      {
-        "@context": "https://schema.org",
-        "@type": "ImageObject",
-        "contentUrl": "https://sarabenmaad.github.io/Lucas-jardins/images/9.jpg",
-        "creator": {
-          "@type": "Organization",
-          "name": "Lucas Jardins"
-        },
-        "creditText": "Lucas Jardins",
-        "license": "https://creativecommons.org/licenses/by/4.0/",
-        "acquireLicensePage": "https://sarabenmaad.github.io/Lucas-jardins/"
-      }
-  </script>
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-XXXXXX');
-  </script>
-  <style>
-      .jumbotron, .navbar { 
-          display: block; }
-     
-      .jumbotron {
-          padding: 4rem 2rem;
-          background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/9.webp') center/cover;
-      }
-      .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-      }
-  </style>
-  
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-  <!-- Script Bootstrap déplacé en bas du body avec defer -->
+  <link rel="shortcut icon" href="images/9.webp" type="image/x-icon">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://sarabenmaad.github.io/Lucas-jardins/index.html"
+      }]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "contentUrl": "https://sarabenmaad.github.io/Lucas-jardins/images/9.jpg",
+      "creator": {
+        "@type": "Organization",
+        "name": "Lucas Jardins"
+      },
+      "creditText": "Lucas Jardins",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "acquireLicensePage": "https://sarabenmaad.github.io/Lucas-jardins/"
+    }
+  </script>
+  
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXX');</script>
 </head>
+
 <body>
-    <header class="jumbotron" role="banner">
-        <div class="container">
-          <h1>lucasjardins</h1>
-          <p>Créez l'espace vert de vos rêves avec nos experts en jardinage et paysagisme.</p>
-            <a href="#services" class="btn btn-success btn-lg" aria-label="Découvrez nos services de jardinage">Découvrez nos services</a>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank" aria-label="Suivez-nous sur Facebook">
-                  <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                  <span class="visually-hidden">Facebook</span>
-                </a>
-                <a href="https://twitter.com" target="_blank" aria-label="Suivez-nous sur Twitter">
-                  <i class="fab fa-twitter" aria-hidden="true"></i>
-                  <span class="visually-hidden">Twitter</span>
-                </a>
-                <a href="https://instagram.com" target="_blank" aria-label="Suivez-nous sur Instagram">
-                  <i class="fab fa-instagram" aria-hidden="true"></i>
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </div>
-        </div>
-    </header>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+  <header class="jumbotron" role="banner">
+    <div class="container">
+      <h1>lucasjardins</h1>
+      <p>Créez l'espace vert de vos rêves avec nos experts en jardinage et paysagisme.</p>
+      <a href="#services" class="btn btn-success btn-lg" aria-label="Découvrez nos services de jardinage">Découvrez nos services</a>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Suivez-nous sur Facebook">
+          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+          <span class="visually-hidden">Facebook</span>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Suivez-nous sur Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+          <span class="visually-hidden">Twitter</span>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Suivez-nous sur Instagram">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </div>
+    </div>
+  </header>
 
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
@@ -183,8 +192,6 @@
 
     <section id="services" class="container my-5">
         <h2 class="section-title">Nos Services</h2>
-
-        <!-- Service 1 : Création et entretien -->
         <div class="row align-items-center mb-5">
             <div class="col-md-6">
                 <h3>Création et entretien</h3>
@@ -199,7 +206,6 @@
                 <a href="creation-entretien.html" class="btn btn-success">En savoir plus</a>
             </div>
             <div class="col-md-6">
-                <!-- Carousel pour les images -->
                 <div id="carouselCreation" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -231,7 +237,6 @@
 
         </div>
 
-        <!-- Service 2 : Systèmes d'arrosage -->
         <div class="row align-items-center mb-5">
             <div class="col-md-6">
                 <div id="carouselArrosage" class="carousel slide" data-bs-ride="carousel">
@@ -324,7 +329,6 @@
         </div>
     </section>
 
-    <!-- Section Galerie -->
     <section id="gallery" class="container my-5">
         <h2 class="section-title">Galerie</h2>
         <div class="row">
@@ -340,19 +344,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <!-- Section À propos -->
                 <div class="col-md-4 mb-4">
                     <h3>lucasjardins</h3>
                     <p>lucasjardins est une entreprise spécialisée en jardinage et paysagisme, offrant des services
                         d'aménagement et d'entretien d'espaces verts depuis 2010. Nous nous engageons à créer des
                         espaces uniques et durables.</p>
                 </div>
-
-                <!-- Section Liens rapides -->
                 <div class="col-md-4 mb-4">
                     <h3>Liens rapides</h3>
                     <ul class="list-unstyled">
@@ -363,8 +363,6 @@
                         <li><a href="index.html#contact" class="text-white">Contact</a></li>
                     </ul>
                 </div>
-
-                <!-- Section Informations -->
                 <div class="col-md-4 mb-4">
                     <h3>Informations</h3>
                     <ul class="list-unstyled">
@@ -381,22 +379,28 @@
                             contact@lucasjardins.com
                         </li>
                     </ul>
-                    <!-- Liens réseaux sociaux -->
                     <div class="social-links mt-3">
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com/lucasjardins" class="text-white me-3" aria-label="Page Facebook de Lucas Jardins">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span class="visually-hidden">Facebook</span>
+                        </a>
+                        <a href="https://instagram.com/lucasjardins" class="text-white me-3" aria-label="Page Instagram de Lucas Jardins">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="visually-hidden">Instagram</span>
+                        </a>
+                        <a href="https://twitter.com/lucasjardins" class="text-white" aria-label="Compte Twitter de Lucas Jardins">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="visually-hidden">Twitter</span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <!-- Copyright -->
             <div class="text-center mt-4">
                 <p>&copy; 2025 lucasjardins. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="js/main.js">
 </body>
