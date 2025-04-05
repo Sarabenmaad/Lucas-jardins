@@ -112,7 +112,6 @@ body {
   object-fit: cover;
 }
 
-/* Style pour la section Nos Services */
 #services {
     padding: 50px 0;
   }
@@ -171,9 +170,6 @@ body {
   }
   
 
-
-
-/* Style pour la section parallax */
 .parallax-section {
     background: url('images/2.webp') no-repeat center center fixed;
     background-size: cover;
@@ -186,9 +182,7 @@ body {
     text-align: center;
     color: white;
   }
-  
-  /* Effet parallax */
-  .parallax-section::before {
+    .parallax-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -214,7 +208,6 @@ body {
     margin-bottom: 30px;
   }
 
-/* Style pour la section Témoignages */
 .testimonial-carousel {
     background: url('images/6.webp') no-repeat center center;
     background-size: cover;
@@ -273,7 +266,6 @@ body {
     background-color: #ccc;
   }
 
-/*Témoignages */
 .testimonial-snippet {
   background-color: #f8f9fa;
   border-left: 4px solid #28a745;
@@ -285,7 +277,6 @@ body {
   font-family: 'Arial', sans-serif;
 } 
   
-/* Style pour le footer */
 .footer {
     background: url('images/4.webp') no-repeat center center;
     background-size: cover;
