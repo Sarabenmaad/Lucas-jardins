@@ -4,11 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Débroussaillage | Lucas Jardins</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="description" content="Débroussaillage professionnel à Paris par Lucas Jardins. Prévention incendie, nettoyage de terrain et entretien écologique. ☎ Devis gratuit !">  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="images/10.webp" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="preload" href="images/dep.webp" as="image">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Débroussaillage",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Lucas Jardins",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Rue des Jardins",
+          "addressLocality": "Paris",
+          "addressCountry": "FR"
+        },
+        "telephone": "+331101010",
+        "openingHours": "Mo-Fr 08:00-18:00"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Paris et région parisienne"
+      },
+      "description": "Service professionnel de débroussaillage pour particuliers et professionnels à Paris.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services de débroussaillage",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Débroussaillage standard"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Débroussaillage écologique"
+            }
+          }
+        ]
+      }
+    }
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -45,7 +89,7 @@
       overflow-x: hidden;
     }
     .service-header {
-      background: url('images/dep.jpg') no-repeat center center/cover;
+      background: url('images/dep.webp') no-repeat center center/cover;
       color: white;
       padding: 100px 0;
       text-align: center;
@@ -157,12 +201,32 @@
     <p class="animate__animated animate__fadeInUp">Nos experts vous aident à éliminer les broussailles, herbes hautes et déchets verts pour prévenir les incendies et améliorer l’esthétique de votre espace.</p>
     
     <div class="image-gallery">
-      <img src="images/DE1.jpg" alt="Débroussaillage en cours" class="animate__animated animate__zoomIn">
-      <img src="images/DE2.jpg" alt="Terrain nettoyé" class="animate__animated animate__zoomIn">
-      <img src="images/DE3.jpg" alt="Avant / Après" class="animate__animated animate__zoomIn">
+      <img src="images/DE1.jpg" alt="Professionnel en train de débroussailler un terrain à Paris" loading="lazy" width="800" height="400" class="animate__animated animate__zoomIn">
+      <img src="images/DE2.webp" alt="Résultat après débroussaillage d'un jardin par nos équipes" loading="lazy" width="800" height="400" class="animate__animated animate__zoomIn">
+      <img src="images/DE3.webp" alt="Comparaison avant/après débroussaillage par Lucas Jardins" loading="lazy" width="800" height="400" class="animate__animated animate__zoomIn">
     </div>
 
+    <section class="container my-5">
+      <h2>Pourquoi choisir notre service de débroussaillage ?</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Avantages du débroussaillage</h3>
+          <ul>
+            <li>Prévention des risques d'incendie</li>
+            <li>Amélioration de l'esthétique de votre terrain</li>
+            <li>Protection de la biodiversité</li>
+            <li>Valorisation de votre propriété</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Notre méthode</h3>
+          <p>Nos jardiniers professionnels interviennent avec du matériel adapté pour un débroussaillage efficace et écologique. Nous recyclons tous les déchets verts et adaptons notre intervention à la nature de votre terrain.</p>
+        </div>
+      </div>
+    </section>
+
     <a href="contact.html" class="btn btn-success btn-contact animate__animated animate__pulse">Contactez-nous</a>
+    <p>Découvrez également nos autres <a href="index.html#services" title="Services de jardinage">services d'entretien d'espaces verts</a> comme l'<a href="Elagage.html" title="Élagage professionnel">élagage</a> ou la <a href="pelouse.html" title="Tonte de pelouse">tonte de pelouse</a>.</p>
   </section>
 
   <footer class="footer text-center bg-dark text-white p-3">

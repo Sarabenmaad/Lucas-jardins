@@ -4,10 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Désherbage | Lucas Jardins</title>
+  <meta name="description" content="Désherbage écologique de jardins à Paris. Élimination des mauvaises herbes et entretien durable par Lucas Jardins. Résultats visibles immédiatement.">
   <!-- Bootstrap CSS -->
+  <link rel="shortcut icon" href="images/10.webp" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Lucas Jardins - Désherbage Paris",
+      "serviceType": "Désherbage écologique",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "48.8566",
+          "longitude": "2.3522"
+        },
+        "geoRadius": "20000"
+      }
+    }
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -86,11 +104,13 @@
   </style>
 </head>
 <body>
-
   <!-- En-tête de la page -->
   <header class="service-header">
     <div class="container">
-      <h1>Désherbage de Jardin</h1>
+      <title>Désherbage Écologique à Paris | Lucas Jardins - Expert Jardinage</title>
+      <meta name="description" content="Désherbage naturel et durable à Paris. Élimination des mauvaises herbes sans produits chimiques. ☎ Devis gratuit et intervention rapide dans tout Paris.">
+      <h1>Désherbage Écologique à Paris : Solution Sans Produits Chimiques</h1>
+      <p>Un jardin propre et sain, sans mauvaises herbes !</p>
     </div>
   </header>
   <!-- Navbar -->
@@ -102,7 +122,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Acceuil</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
@@ -132,23 +152,45 @@
 
   <!-- Contenu principal de la page -->
   <section class="service-content container">
+    <h2>Pourquoi choisir notre méthode de désherbage à Paris ?</h2>
+    <ul>
+       <li><strong>Techniques manuelles</strong> : Arrachage racinaire pour un résultat durable</li>
+       <li><strong>Désherbage thermique</strong> : Solution écologique pour les allées et terrasses</li>
+       <li><strong>Prévention naturelle</strong> : Paillage organique pour limiter la repousse</li>
+    </ul>
+
+    <h3>Zones d'intervention à Paris</h3>
+    <p>Nous couvrons tous les arrondissements, avec une expertise particulière pour :</p>
+    <ul>
+       <li>Les <strong>jardins historiques</strong> (Louvre, Marais)</li>
+       <li>Les <strong>cours d'immeubles</strong> (16e, 8e arrondissements)</li>
+    </ul>
     <h2>Transformez votre Jardin : Avant et Après</h2>
     <p>Découvrez l'impact de notre service de désherbage sur l'apparence de votre jardin. Un jardin propre, sans mauvaises herbes, c'est un espace agréable à vivre.</p>
+    
 
     <!-- Comparaison avant-après -->
     <div class="image-comparison">
       <div class="image-block">
         <h3>Avant Désherbage</h3>
-        <img src="images/avant.webp" alt="Jardin avant désherbage">
+        <img src="images/avant.webp" 
+         alt="Jardin envahi par les mauvaises herbes dans le 15e arrondissement" 
+         loading="lazy"
+         width="600"
+         height="400">
       </div>
       <div class="image-block">
         <h3>Après Désherbage</h3>
-        <img src="images/apres.webp" alt="Jardin après désherbage">
+        <img src="images/A1.webp" alt="Aménagement de terrasse en bois moderne à Paris"
+         width="600"
+         height="400">>      
       </div>
     </div>
 
     <!-- Bouton de contact -->
-    <a href="index.html#contact" class="btn btn-success">Contactez-nous</a>
+    <a href="contact.html" class="btn btn-success" aria-label="Demander un devis désherbage Paris">
+      🌱 Devis Gratuit pour le Désherbage à Paris
+    </a>
   </section>
 
   <!-- Footer -->
